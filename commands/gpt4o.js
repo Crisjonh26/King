@@ -17,7 +17,7 @@ module.exports = {
 ➥ ${prefix}gpt4o What is the capital of France?
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
+Bot Developer: CrisJhon Deguiñon
         `, event.threadID);
         return;
       }

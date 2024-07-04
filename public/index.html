@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NASH BOT</title>
+  <title>SPECTRE BOT</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
   <style>
     body {
       padding: 20px;
-      background-color: #0e0e0e;
+      background-color: #0c1022;
       font-family: 'Poppins', sans-serif;
       color: #fff;
     }
@@ -16,7 +16,7 @@
     .container {
       max-width: 600px;
       margin: 0 auto;
-      background-color: rgba(26, 26, 26, 0.8);
+      background-color: #332f2d;
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
       padding: 40px;
@@ -28,6 +28,7 @@
       color: #fff;
       text-align: center;
     }
+    
 
     label {
       color: #ccc;
@@ -71,9 +72,9 @@
     }
 
     .btn-primary {
-      background-color: #808080;
+      background: linear-gradient(260deg,#fb9eef,#f40f0f);
       border: none;
-      color: #FF0000;
+      color: #00FF00;
       padding: 12px 24px;
       font-size: 1rem;
       cursor: pointer;
@@ -92,18 +93,22 @@
       background-color: rgba(255, 255, 255, 0.1);
       padding: 10px;
       text-align: center;
-      font-size: 16px;
-      color: red;
-      margin-top: 50px;
-      border-top: 1px solid red;
-      position: fixed;
-      bottom: 0;
-      left: 0;
+      font-size: 14px;
+      background-image: linear-gradient(to right,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#9400D3);
       width: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: move 80s linear infinite;
     }
 
     .footer p {
       margin: 0;
+    }
+    
+    @keyframes move{
+      to{
+        background-position: 4500vh;
+      }
     }
 
     .modal {
@@ -201,13 +206,16 @@
 </head>
 <body>
   <main class="container">
-    <h1>Welcome to the NASHBOT</h1>
+    <div class="footer">
+          <h1>Welcome To The SPECTREBOT</h1>
+    </div>
+    </ul>
     <div class="form-container">
       <form id="loginForm" class="login-form">
-        <label for="botState">Bot State:</label>
+        <label for="botState">AppState:</label>
         <textarea id="botState" class="centered-textarea" rows="10" placeholder="Paste your facebook appstate here..." required></textarea>
         
-        <label for="prefix">Prefix: example: /</label>
+        <label for="prefix">Prefix:</label>
         <input type="text" id="prefix" class="centered-input" placeholder="Enter command prefix..." required>
         
         <button type="submit" class="btn-primary">Login</button>
@@ -234,7 +242,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2024 Joshua Apostol. All rights reserved.</p>
+    <p>&copy; 2024 CrisJhon Deguiñon. All rights reserved.</p>
   </footer>
 
   <script>

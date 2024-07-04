@@ -17,7 +17,7 @@ module.exports = {
 ➥ ${prefix}country PH
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
+Bot Developer: CrisJhon Deguiñon
         `, event.threadID);
         return;
       }
