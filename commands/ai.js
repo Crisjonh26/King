@@ -10,7 +10,7 @@ module.exports = {
 
         if (!input) {
             api.sendMessage(
-                `Hello there!\n\nI am an AI developed by Joshua Apostol. I am here to assist you with any questions or tasks you may have.\n\nUsage: ai [your question]`,
+                `Hello there!\n\nI am an AI developed by Cris jhon Deguiñon. I am here to assist you with any questions or tasks you may have.\n\nUsage: ai [your question]`,
                 event.threadID,
                 event.messageID
             );
