@@ -52,7 +52,7 @@ Bot Developer: CrisJhon Deguiñon
 - **OpenStreetMaps:** [View Map](${maps.openStreetMaps})
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
+Bot Developer: CrisJhon Deguiñon
             `;
 
             api.sendMessage(countryInfo, event.threadID);
